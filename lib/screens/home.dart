@@ -17,7 +17,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text(widget.title)),
+        title: Text(widget.title),
+        centerTitle: true,
         actions: [buildPopupMenuButton()],
       ),
       body: Container(

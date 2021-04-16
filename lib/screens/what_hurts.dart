@@ -4,7 +4,10 @@ class WhatHurtsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: Text("What hurts?"),
+        centerTitle: true,
+      ),
       body: Center(
         child: Column(
           children: [
@@ -13,7 +16,7 @@ class WhatHurtsScreen extends StatelessWidget {
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton(
                 child: Text(
-                  "Head / Neck",
+                  "Neck",
                   style: TextStyle(fontSize: 20),
                 ),
                 onPressed: () {},
@@ -51,6 +54,24 @@ class WhatHurtsScreen extends StatelessWidget {
               child: ElevatedButton(
                 child: Text(
                   "Elbow",
+                  style: TextStyle(fontSize: 20),
+                ),
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.deepOrangeAccent,
+                  minimumSize: Size(88, 50),
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  shape: const RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                child: Text(
+                  "Penis",
                   style: TextStyle(fontSize: 20),
                 ),
                 onPressed: () {},
