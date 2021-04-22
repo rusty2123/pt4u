@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pt4u/screens/no_pts_found.dart';
+import 'package:pt4u/screens/pt_selection.dart';
 
 class IntakeScreen extends StatefulWidget {
   @override
@@ -106,7 +106,7 @@ class _IntakeScreenState extends State<IntakeScreen> {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return NoPtsFoundScreen();
+                      return PtSelectionScreen();
                     },
                   ),
                 );
